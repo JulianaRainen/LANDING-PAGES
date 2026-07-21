@@ -563,6 +563,17 @@ h3 {
     url("https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80") center/cover;
 }
 
+.hero-copy .hero-actions::after {
+  content: "scanner digital · plano explicado · estética natural";
+  flex-basis: 100%;
+  margin-top: 12px;
+  color: #0e7490;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .clinic-diagnostic {
   display: grid;
   grid-template-columns: .88fr 1.12fr;
@@ -604,6 +615,16 @@ h3 {
   overflow: hidden;
   border: 1px solid rgba(14,165,233,.18);
   box-shadow: 0 34px 100px rgba(14,116,144,.16);
+}
+
+.clinic-visual::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  z-index: 2;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 8px;
+  pointer-events: none;
 }
 
 .clinic-visual::after {
@@ -660,6 +681,21 @@ h3 {
   background: rgba(255,255,255,.92);
   box-shadow: 0 18px 50px rgba(14,116,144,.14);
   font-weight: 900;
+}
+
+.service-card {
+  min-height: 230px;
+  background:
+    linear-gradient(180deg, rgba(14,165,233,.08), transparent 42%),
+    #fff;
+}
+
+.visual-showcase {
+  background: #f7fbff;
+}
+
+.cta-panel {
+  box-shadow: 0 34px 90px rgba(14,116,144,.13);
 }
 
 @media (max-width: 900px) {

@@ -542,6 +542,39 @@ h3 {
   }
 }
 
+.hero.section {
+  color: #f7ffe7;
+  background:
+    linear-gradient(110deg, rgba(7,20,15,.96) 0%, rgba(7,20,15,.9) 46%, rgba(7,20,15,.35) 100%),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80") center/cover,
+    #07140f;
+}
+
+@media (max-width: 900px) {
+  .hero.section {
+    background:
+      linear-gradient(180deg, rgba(7,20,15,.96), rgba(7,20,15,.82)),
+      url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80") center/cover,
+      #07140f;
+  }
+}
+
+@media (max-width: 620px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .split::after {
+    min-height: 120px;
+    padding: 18px;
+  }
+}
+
 @media (max-width: 620px) {
   .hero {
     min-height: auto;
@@ -569,5 +602,152 @@ h3 {
     right: 16px;
     text-align: center;
     justify-content: center;
+  }
+}
+
+/* Premium direction: commercial solar conversion */
+body {
+  background: #07140f;
+}
+
+.site-header {
+  background: rgba(7, 20, 15, .9);
+  border-bottom-color: rgba(255,255,255,.08);
+}
+
+.brand,
+.nav-links a {
+  color: #f7ffe7;
+}
+
+.menu-toggle {
+  background: rgba(255,255,255,.1);
+}
+
+.menu-toggle span {
+  background: #f7ffe7;
+}
+
+.hero {
+  min-height: calc(100vh - 76px);
+  color: #f7ffe7;
+  background:
+    linear-gradient(110deg, rgba(7,20,15,.96) 0%, rgba(7,20,15,.9) 46%, rgba(7,20,15,.35) 100%),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80") center/cover;
+}
+
+.hero-grid {
+  grid-template-columns: .9fr 1.1fr;
+}
+
+.hero-copy p {
+  color: rgba(247,255,231,.76);
+}
+
+.hero-actions::after {
+  content: "até 95% de redução estimada · projeto homologado · monitoramento remoto";
+  flex-basis: 100%;
+  margin-top: 12px;
+  color: #d9f99d;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.hero-media {
+  border-radius: 8px;
+  border: 1px solid rgba(217,249,157,.22);
+  box-shadow: 0 34px 100px rgba(0,0,0,.38);
+}
+
+.hero-media img {
+  height: min(600px, 72vh);
+}
+
+.section {
+  background: #fbfff4;
+}
+
+.split {
+  position: relative;
+}
+
+.split::after {
+  content: "ROI estimado em 36 meses";
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  border-radius: 8px;
+  color: #062018;
+  background: linear-gradient(135deg, #d9f99d, #22c55e);
+  box-shadow: var(--shadow);
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, #ecfccb, #fbfff4);
+}
+
+.benefit-card {
+  border: 0;
+  background: #fff;
+}
+
+.benefit-card img {
+  width: 34px;
+}
+
+.card-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card {
+  min-height: 230px;
+  border: 0;
+  background: linear-gradient(180deg, #fff, #f4ffe0);
+}
+
+.service-card h3 {
+  color: #0f3f2e;
+}
+
+.visual-showcase {
+  background: #07140f;
+  color: #f7ffe7;
+}
+
+.showcase-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 420px;
+}
+
+.showcase-card:first-child {
+  grid-row: auto;
+}
+
+.section-dark {
+  background: #0a1f17;
+}
+
+.feature {
+  background: rgba(217,249,157,.1);
+  border-color: rgba(217,249,157,.2);
+}
+
+.cta-panel {
+  border-radius: 8px;
+  background: linear-gradient(135deg, #d9f99d, #ffffff);
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-grid {
+    grid-template-rows: none;
   }
 }

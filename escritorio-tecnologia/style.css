@@ -542,6 +542,28 @@ h3 {
   }
 }
 
+.hero.section {
+  color: #e5eefb;
+  background:
+    radial-gradient(circle at 78% 24%, rgba(14,165,233,.34), transparent 32%),
+    linear-gradient(120deg, #07111f 0%, #0f1f38 54%, #082f49 100%);
+}
+
+@media (max-width: 620px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 620px) {
   .hero {
     min-height: auto;
@@ -569,5 +591,181 @@ h3 {
     right: 16px;
     text-align: center;
     justify-content: center;
+  }
+}
+
+/* Premium direction: SaaS and automation lab */
+body {
+  color: #e5eefb;
+  background: #07111f;
+}
+
+.site-header {
+  background: rgba(7, 17, 31, .9);
+  border-bottom-color: rgba(148, 163, 184, .16);
+}
+
+.brand,
+.nav-links a {
+  color: #e5eefb;
+}
+
+.menu-toggle {
+  background: rgba(148, 163, 184, .16);
+}
+
+.menu-toggle span {
+  background: #e5eefb;
+}
+
+.hero {
+  min-height: calc(100vh - 76px);
+  background:
+    linear-gradient(120deg, #07111f 0%, #0f1f38 54%, #082f49 100%);
+}
+
+.hero-grid {
+  grid-template-columns: .86fr 1.14fr;
+  gap: 74px;
+}
+
+.hero-copy p {
+  color: #a9b9cf;
+}
+
+.hero-actions::after {
+  content: "sites rápidos · automações com IA · dashboards executivos";
+  flex-basis: 100%;
+  margin-top: 12px;
+  color: #67e8f9;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.hero-media {
+  position: relative;
+  padding: 12px;
+  border: 1px solid rgba(103,232,249,.2);
+  border-radius: 8px;
+  background: rgba(15, 31, 56, .74);
+  box-shadow: 0 34px 100px rgba(0,0,0,.4);
+}
+
+.hero-media::before {
+  content: "Nexa Command Center";
+  display: block;
+  padding: 12px 14px;
+  color: #67e8f9;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.hero-media img {
+  height: min(560px, 68vh);
+  border-radius: 8px;
+}
+
+.section {
+  color: #0f172a;
+  background: #f8fbff;
+}
+
+.split {
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-soft {
+  background: #eaf4ff;
+}
+
+.benefit-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.benefit-card {
+  padding: 18px;
+  border: 0;
+  background: #07111f;
+  color: #e5eefb;
+}
+
+.benefit-card h3 {
+  font-size: 15px;
+}
+
+.card-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-card {
+  min-height: 220px;
+  border-color: rgba(14, 165, 233, .16);
+  background:
+    linear-gradient(135deg, rgba(14,165,233,.08), transparent 48%),
+    #fff;
+}
+
+.service-card h3::before {
+  content: "</>";
+  display: block;
+  margin-bottom: 18px;
+  color: #0284c7;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.visual-showcase {
+  background: #07111f;
+  color: #e5eefb;
+}
+
+.showcase-grid {
+  grid-template-columns: .8fr 1.2fr;
+  grid-template-rows: repeat(2, 280px);
+}
+
+.showcase-card {
+  border: 1px solid rgba(103,232,249,.16);
+}
+
+.section-dark {
+  background: #020617;
+}
+
+.feature {
+  background: rgba(14,165,233,.1);
+  border-color: rgba(103,232,249,.16);
+}
+
+.cta-panel {
+  color: #e5eefb;
+  background:
+    linear-gradient(135deg, rgba(7,17,31,.94), rgba(8,47,73,.9)),
+    url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80") center/cover;
+}
+
+.cta-panel p {
+  color: #a9b9cf;
+}
+
+@media (max-width: 1100px) {
+  .benefit-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .card-grid,
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-grid {
+    grid-template-rows: none;
   }
 }

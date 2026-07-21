@@ -543,6 +543,21 @@ h3 {
 }
 
 @media (max-width: 620px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
   .hero {
     min-height: auto;
   }
@@ -569,5 +584,140 @@ h3 {
     right: 16px;
     text-align: center;
     justify-content: center;
+  }
+}
+
+/* Premium direction: clean clinical luxury */
+body {
+  background: #f7fbff;
+}
+
+.site-header {
+  background: rgba(247, 251, 255, .9);
+}
+
+.hero {
+  min-height: calc(100vh - 76px);
+  background:
+    linear-gradient(115deg, #f7fbff 0%, #fff 45%, #e9fbff 100%);
+}
+
+.hero-grid {
+  grid-template-columns: .95fr 1.05fr;
+  gap: 72px;
+}
+
+.hero-copy {
+  padding: 36px 0;
+}
+
+.hero-actions::after {
+  content: "4.9/5 em avaliações fictícias · scanner digital · atendimento humanizado";
+  flex-basis: 100%;
+  margin-top: 10px;
+  color: #457083;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hero-media {
+  position: relative;
+  padding: 14px;
+  border: 1px solid rgba(14,165,233,.16);
+  border-radius: 8px;
+  background: rgba(255,255,255,.78);
+}
+
+.hero-media::after {
+  content: "Plano digital do sorriso";
+  position: absolute;
+  left: 34px;
+  bottom: 34px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  color: #0f3f4f;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 18px 50px rgba(14, 116, 144, .16);
+  font-weight: 900;
+}
+
+.hero-media img {
+  border-radius: 8px;
+}
+
+.split {
+  grid-template-columns: .75fr 1.25fr;
+  padding: 42px;
+  border: 1px solid rgba(14,165,233,.12);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(14, 116, 144, .08);
+}
+
+.benefit-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.benefit-card {
+  min-height: 170px;
+  padding: 18px;
+  border-color: rgba(14,165,233,.14);
+}
+
+.benefit-card h3 {
+  font-size: 16px;
+}
+
+.card-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card {
+  border-left: 4px solid var(--primary);
+}
+
+.visual-showcase {
+  background: linear-gradient(180deg, #fff, #eefbff);
+}
+
+.showcase-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 360px;
+}
+
+.showcase-card:first-child {
+  grid-row: auto;
+}
+
+.section-dark {
+  background: #0f2733;
+}
+
+.feature {
+  background: rgba(125, 211, 252, .1);
+  border-color: rgba(125, 211, 252, .2);
+}
+
+.cta-panel {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgba(14,165,233,.14);
+}
+
+@media (max-width: 1100px) {
+  .benefit-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .split,
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-grid {
+    grid-template-rows: none;
   }
 }

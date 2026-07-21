@@ -570,6 +570,69 @@ h3 {
   }
 }
 
+.signature-menu {
+  color: #fffaf0;
+  background:
+    linear-gradient(135deg, rgba(16,15,13,.96), rgba(127,29,29,.82)),
+    url("https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.signature-menu .section-heading {
+  max-width: 840px;
+}
+
+.menu-board {
+  display: grid;
+  grid-template-columns: 1.35fr repeat(3, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.menu-highlight,
+.menu-item {
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 8px;
+  background: rgba(16,15,13,.72);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 26px 80px rgba(0,0,0,.24);
+}
+
+.menu-highlight {
+  min-height: 360px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu-highlight h3 {
+  margin: 18px 0;
+  font-size: clamp(30px, 4vw, 52px);
+}
+
+.menu-highlight strong {
+  color: #facc15;
+  font-size: 34px;
+}
+
+.menu-item {
+  padding: 24px;
+}
+
+.menu-item span,
+.menu-highlight span {
+  color: #facc15;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .menu-board {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 620px) {
   .hero {
     min-height: auto;

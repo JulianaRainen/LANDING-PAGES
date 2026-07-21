@@ -575,6 +575,68 @@ h3 {
   }
 }
 
+.solar-roi {
+  color: #f7ffe7;
+  background: #07140f;
+}
+
+.roi-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.roi-copy p {
+  max-width: 560px;
+  color: rgba(247,255,231,.72);
+  font-size: 18px;
+}
+
+.roi-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid rgba(217,249,157,.18);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(217,249,157,.16), rgba(34,197,94,.08));
+}
+
+.roi-panel div {
+  min-height: 190px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #f7ffe7;
+  color: #07140f;
+}
+
+.roi-panel span {
+  display: block;
+  margin-bottom: 18px;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.roi-panel strong {
+  display: block;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: .98;
+}
+
+@media (max-width: 900px) {
+  .roi-grid,
+  .roi-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .roi-panel div {
+    min-height: 140px;
+  }
+}
+
 @media (max-width: 620px) {
   .hero {
     min-height: auto;

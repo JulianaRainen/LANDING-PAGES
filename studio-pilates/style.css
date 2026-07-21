@@ -542,6 +542,58 @@ h3 {
   }
 }
 
+.wellness-path {
+  background:
+    linear-gradient(180deg, #fff, #eef8f1);
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.path-card {
+  min-height: 310px;
+  padding: 30px;
+  border: 1px solid rgba(58,90,64,.1);
+  border-radius: 42% 58% 48% 52% / 54% 44% 56% 46%;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(58,90,64,.1);
+}
+
+.path-card:nth-child(2) {
+  margin-top: 56px;
+  border-radius: 56% 44% 52% 48% / 44% 56% 44% 56%;
+}
+
+.path-card span {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.path-card h3 {
+  margin: 22px 0 14px;
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.path-card p {
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .path-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .path-card,
+  .path-card:nth-child(2) {
+    margin-top: 0;
+    border-radius: 28px;
+  }
+}
+
 @media (max-width: 620px) {
   .hero {
     min-height: auto;
